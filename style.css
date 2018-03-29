@@ -1,0 +1,35 @@
+.aboutFoodar{
+  background: red;
+}
+
+#foodarname {
+  color: blue;
+}
+
+#vertalign {
+  vertical-align: top;
+}
+
+#floatleft {
+  float: left;
+}
+
+#floatright {
+  float: right;
+}
+
+#inlineBlock {
+  display: inline-block;
+}
+
+h1 {
+  color: green;
+}
+
+p {
+  background: blue;
+}
+
+input {
+  padding: 1em;
+}
