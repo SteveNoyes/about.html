@@ -1,9 +1,23 @@
-.aboutFoodar{
-  background: red;
+.container {
+    position: relative;
+    text-align: center;
+    color: white;
+
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
+.leftAlign, .midAlign, .rightAlign{
+   display:inline-block;
+   position:relative;
+   width:calc(100% / 3);
+   
 #foodarname {
   color: blue;
+  background: red;
 }
 
 #vertalign {
@@ -21,6 +35,8 @@
 #inlineBlock {
   display: inline-block;
 }
+
+hr { width:100%; height:1px; background: #fff }
 
 h1 {
   color: green;
