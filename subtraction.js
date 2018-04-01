@@ -1,3 +1,7 @@
+var t;
+
+var u;
+
 var x= 3;
 
 var y= 7;
