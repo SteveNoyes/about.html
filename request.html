@@ -3,34 +3,64 @@
 <html>
   <head>
     <title>Request</title>
+    <style>
+      * {
+        font-fmaily:'Century Gothic', sans-serif;
+      }
+    </style>
+    <link rel="stylesheet" type="text/css" href="style.css">
   </head>
+  
   <body>
-    <h1>SUBMIT YOUR REQUEST</h1>
-    <br />
-    <p>Please fill out the form below.</p>
+    <form>
+      <h1>SUBMIT YOUR REQUEST</h1>
+      <br />
+      <p>Please fill out the form below.</p>
+      
+      <br />
+      <h3>Address:</h3>
+      
+      <br />
+      <input type= "email">
+      
+      <br />
+      <h3>Choose Your Style:</h3>
+      <br />
+      
+      <!-- Three boxes with Radio buttons -->
+        <section type="radio" name="classic" value="3" id ="classic">This is the classic treatment.</section>
+        <section type="radio" name="premium" value="5" id= "premium">This is the premium treatmeant.</section>
+        <section type="radio" name="royal" value="10" id= "royal">This is the royal treatment.</section>
+  
+      <br />
+      <h3>Restaurant:</h3>
+      <input type="text">
+      <br />
+      <h3>Tip:</h3>
+      <br />
+      
+      <!-- Three boxes, with classes, with radio buttons -->
+        <section type="radio" name="classic" value="10" id= "10%">10%: They did their job.</section>
+        <section type="radio" name="classic" value="15" id= "15%">15% They made you feel special.</section>
+        <section type="radio" name="classic" value="20" id= "20%">I wanna give them more, but this is all I have!</section>
+        
+      <br />
+      <h2 class ="total">Total:</h2>
+      <br />
+      <button type="Submit">Request</button>
+      <hr />
+    </form>
     
-    <br />
-    <h3>Address:</h3>
-    
-    <br />
-    <input type= "email">
-    
-    <br />
-    <h3>Choose Your Style:</h3>
-    <br />
-    <!-- Three boxes with Radio buttons -->
-    <br />
-    <h3>Restaurant:</h3>
-    <input type="text">
-    <br />
-    <h3>Tip:</h3>
-    <br />
-    <!-- Three boxes, with classes, with radio buttons -->
-    <br />
-    <h2 class ="total">Total:</h2>
-    <br />
-    <button type="Submit">Request</button>
-    <hr />
+    <footer>
+      <div class="vertical-menu">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="register.html" target="_blank">Registration</a>
+      <a href="request.html">Request</a>
+      </div>
+      &copy; Copyright 2018 All rights reserved
+    </footer>
+    <script src="myscripts.js"></script>
   </body>
   
 </html>
