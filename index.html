@@ -7,57 +7,71 @@
         font-fmaily:'Century Gothic', sans-serif;
       }
     </style>
+    <link rel="stylesheet" type="text/css" href="style.css">
   </head>
-  
-  <body>
-    <!-- Advertisement Banner -->
-    <object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=10,0,0,0" width="728" height="90">
-      <param name="movie" value="flashvortex.swf" />
-      <param name="quality" value="best" />
-      <param name="menu" value="true" />
-      <param name="allowScriptAccess" value="sameDomain" />
-      <embed src="flashvortex.swf" quality="best" menu="true" width="728" height="90" type="application/x-shockwave-flash" pluginspage="http://www.macromedia.com/go/getflashplayer" allowScriptAccess="sameDomain" />
-    </object>
+
+    <script language="Javascript">MyBanners=new Array('banner1.jpg','banner2.jpg','banner3.jpg','banner4.jpg')
+    banner=0
+      function ShowBanners()
+      { if (document.images)
+      { banner++
+      if (banner==MyBanners.length) {
+      banner=0}
+      document.ChangeBanner.src=MyBanners[banner]
+      setTimeout("ShowBanners()",5000)
+      }
+      }
+    </script>
     
-    <!-- Advertisement Banner Version Two -->
-    <script src="http://h2.flashvortex.com/display.php?id=2_1522366749_39238_816_0_728_90_10_2_47" type="text/javascript"></script>
-    
-    <!-- horizontal line -->
-    <hr />
-    
-    <h1 align="left"><img src= "images/foodarLogo.png" />Foodar</h1>
-    
-    <a>Sign-in / Register</a> <p>| <a> ...</a></p>
-    
-    <br />
-    <!-- horizontal line -->
-    <hr />
-    <div class="container">
-    <img src="images/recipeList.jpg" alt="Recipe list" height= 100px width= 100px>
-    </div>
-    <div class="centered">Try a new way to take out</div>
-    <h1>Find a driver near you!</h1>
-    
-    <p>Type in your zipcode and click Go! to find a driver near you.</p>
-    <label>ZIP Code</label><input type="text" pattern="[0-9]{5}" title="Five digit zip code" />
-    <button type=submit>Go!</button>
-    <!-- horizontal line -->
-    <hr />
-      <footer>
-        <div class="leftAlign">
-          <a href="index.html">Home</a>
-          <a href="about.html">About</a>
-          <a href="register.html" target="_blank">Registration</a>
-        </div>
-        <div class="midAlign">
-          <a href="#">Privacy Policy</a>
-          <a href="#">Terms & Conditions</a>
-        </div>
-        <div class="rightAlign">
-          <p>We're always on your rader.</p>
-        </div>
-       
-        &copy; Copyright 2018 All rights reserved
-      </footer>
+    <body onload="ShowBanners()">
+      <center>
+        <img src="banner1.jpg" width="900" height="120" name="ChangeBanner"/>
+      </center>
+        <!-- Advertisement Banner -->
+      
+      
+      <!-- horizontal line -->
+      <hr />
+      
+      <h1 align="left"><img src= "images.foodarLogo.png" />Foodar</h1>
+      
+      <a href="#">Sign-in</a> <a href="#">Register</a>
+      
+      <br />
+      
+      <!-- horizontal line -->
+      <hr />
+      
+      <div class="container">
+      <img src="images/recipeList.jpg" alt="Recipe list" height= 100px width= 100px>
+      </div>
+      <div class="centered">Try a new way to take out</div>
+      <h1>Find a driver near you!</h1>
+      
+      <p>Type in your zipcode and click Go! to find a driver near you.</p>
+      <label>ZIP Code</label><input type="text" pattern="[0-9]{5}" title="Five digit zip code" />
+      <button type=submit id="zipcheck">Go!</button>
+      
+      <!-- horizontal line -->
+      <hr />
+      
+        <footer>
+          <div class="leftAlign">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="register.html" target="_blank">Registration</a>
+            <a href="request.html">Request</a>
+          </div>
+          <div class="midAlign">
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms & Conditions</a>
+          </div>
+          <div class="rightAlign">
+            <p>We're always on your rader.</p>
+          </div>
+         
+          &copy; Copyright 2018 All rights reserved
+        </footer>
+        <script src="functions.js"></script>
   </body>
 </html>

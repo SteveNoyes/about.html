@@ -49,3 +49,25 @@ p {
 input {
   padding: 1em;
 }
+
+a:hover {
+  background-color: blue;
+}
+
+/* three inline boxes for request form */
+
+body {
+    text-align: center;
+}
+
+
+form {
+    font-size: 0; /*fix white space*/
+}
+form > section {
+    font-size: 16px;
+    display: inline-block;
+    width: 250px;
+    border: 1px outset black;
+    padding: 30px;
+}
